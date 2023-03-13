@@ -1,0 +1,29 @@
+<figure class="product_card">
+    <img src="" alt="">
+    <figcaption>
+        <h2><%= data.details.title %></h2>
+        <ul class="product_inf">
+            <li>
+                <strong>type :</strong>
+                 <%= data.type %>
+            </li>
+            <li>
+                <strong>artist : </strong>
+                <%= data.details.artist %>
+            </li>
+            <li>
+                <strong>genre : </strong>
+                <%= data.details.genre %>
+            </li>
+        </ul>
+        <div class="purchase_box">
+            <strong><%= data.pricing.list %>$</strong>
+            <!-- <button onclick="buy()">buy</button> -->
+            <a href="/product/<%= data.details.title %>" >buy</a>
+        </div>
+    </figcaption>
+</figure>
+
+
+
+

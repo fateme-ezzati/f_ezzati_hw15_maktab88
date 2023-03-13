@@ -1,0 +1,26 @@
+<header class="main_header">
+    <ul>
+        <li <% if (page ==='home') { %>class='current_page' <% } %>>
+            <a href="/home">
+                خانه
+            </a>
+        </li>
+        <li <% if (page ==='about') { %>class='current_page' <% } %>>
+            <a href="/about">
+                درباره ما
+            </a>
+        </li>
+        <li <% if (page ==='contact') { %>class='current_page' <% } %>>
+            <a href="/contact">
+                تماس با ما
+            </a>
+        </li>
+    </ul>
+    <div class="search_box">
+        <input type="text" placeholder="جستجو" id="search_val">
+        <button onclick="search()"></button>
+    </div>
+</header>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="/js/search.js"></script>

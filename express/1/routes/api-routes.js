@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const {
-	getProductInfo,getAllProduct
+	getProductInfo
 } = require('../controllers/product-controller');
 
 
-router.get('/product/all', getAllProduct);
+router.get('/product', getProductInfo);
 
 router.get('/product/:title', getProductInfo);
 

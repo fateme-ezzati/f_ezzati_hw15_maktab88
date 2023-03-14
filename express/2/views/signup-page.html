@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Signup</title>
+	</head>
+	<body>
+		<h1>Signup Page</h1>
+
+		<!-- action="http://localhost:8000/api/auth/signup" method="post" -->
+
+		<form>
+			
+			<input
+				type="text"
+				name="username"
+				id="username"
+				placeholder="username"
+				autocomplete="off"
+			/>
+			<input
+				type="text"
+				name="password"
+				id="password"
+				placeholder="password"
+				autocomplete="off"
+			/>
+			<input
+				type="text"
+				name="email"
+				id="email"
+				placeholder="email"
+			/>
+			<input
+				type="text"
+				name="gender"
+				placeholder="userGender"
+				autocomplete="off"
+			/>
+
+			<button id="submit">sign up</button>
+		</form>
+
+		<span class="error-log"></span>
+
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+   		<script src="/javascripts/validation.js"></script>
+   		<script src="/javascripts/signup.js"></script>
+	</body>
+</html>
